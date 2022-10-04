@@ -17,7 +17,8 @@
     "test:ci": "jest --coverage --silent --ci --env=jsdom",
     "prepare": "husky install",
     "lint": "eslint --fix",
-    "pretty": "prettier --write ."
+    "pretty": "prettier --write .",
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -47,8 +48,10 @@
     ]
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
-      "npm run lint",
+    "*.{js,ts,tsx}": [
+      "eslint --quiet --cache --fix"
+    ],
+    "*.{json,js,ts,jsx,tsx,html}": [
       "prettier --write"
     ]
   },

@@ -6,7 +6,7 @@ const webpack = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ESLintPlugin = require('eslint-webpack-plugin')
+const ESLintPlugin = require("eslint-webpack-plugin");
 
 // Doing TypeScript type checking
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
@@ -40,11 +40,11 @@ module.exports = {
     }),
     //new FriendlyErrorsPlugin(),
     new ESLintPlugin({
-      extensions: ['tsx', "ts", "jsx", "js"],
-      emitError : true,
-      emitWarning : true,
+      extensions: ["tsx", "ts", "jsx", "js"],
+      emitError: true,
+      emitWarning: true,
       failOnError: false,
-      failOnWarning : false
+      failOnWarning: false,
     }),
     // Removes/cleans build folders and unused assets when rebuilding
     new CleanWebpackPlugin(),

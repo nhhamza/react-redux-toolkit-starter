@@ -12,15 +12,13 @@ body {
   width: 100vw;
 }
 
-
 #root {
-
- // Note: Not well for the list of Post on very small screens
- // display: flex;
- // align-items: center;
- // justify-content: center;
- // flex-direction: column;
- // align-self: center;
+  // Note: Not well for the list of Post on very small screens
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: column;
+  // align-self: center;
   //height: 100vh;
 }
 
@@ -30,18 +28,17 @@ h2 {
 }
 
 .lastupdated {
-   color: green;
+  color: green;
 }
 
 div {
-     text-align: left;
+  text-align: left;
 }
 
-  .test { 
-        color: green;
-      }
+.test {
+  color: green;
+}
 
 .custom-text-color-button {
-    color: white; 
+  color: white;
 }
-
