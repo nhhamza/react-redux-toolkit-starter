@@ -15,7 +15,9 @@
     "prod": "http-server ./dist -a localhost -p 8005 -o",
     "test": "jest --watch",
     "test:ci": "jest --coverage --silent --ci --env=jsdom",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint --fix",
+    "pretty": "prettier --write ."
   },
   "repository": {
     "type": "git",
