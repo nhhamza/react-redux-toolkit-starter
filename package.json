@@ -18,12 +18,7 @@
     "prepare": "husky install",
     "lint": "eslint --fix",
     "pretty": "prettier --write .",
-    "precommit": "husky"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -54,7 +49,7 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
-      "eslint --quiet --cache --fix"
+      "eslint"
     ],
     "*.{json,js,ts,jsx,tsx,html}": [
       "prettier --write"
