@@ -18,7 +18,7 @@
     "prepare": "husky install",
     "lint": "eslint --fix",
     "pretty": "prettier --write .",
-    "precommit": "lint-staged"
+    "precommit": "eslint \"**/*.tsx\" --max-warnings=0"
   },
   "repository": {
     "type": "git",
@@ -50,9 +50,6 @@
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "eslint"
-    ],
-    "*.{json,js,ts,jsx,tsx,html}": [
-      "prettier --write"
     ]
   },
   "dependencies": {
